@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="reg.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration Form</title>
+</head>
+<body>
+    <div class="registration">
+        <form>
+            <h2>REGISTRATION FORM</h2><br>
+            Name    :<input type="text" id="name" placeholder="Enter" ><br>
+            RollNo  :<input type="text" id="rollno" placeholder="Enter" ><br>
+            PhNo    :<input type="tel" id="phno" placeholder="Enter"><br>
+            email   :<input type="email" id="email" placeholder="Enter" ><br>
+            Password:<input type="password" id="password" placeholder="Enter" ><br>
+         
+           Branch:<select id="branch" name="branch"> 
+            <option value=" select branch">Select branch</option>
+            <option value=" cse">CSE</option>
+            <option value=" ece">ECE</option>
+            <option value=" ai">AI</option>
+            <option value=" aiml">aiml</option>
+            <option value="ds ">DS</option>
+            <option value="civil">CIVIL</option>
+            </select><br>
+            DOB    :<input type="date" id="dob" placeholder="Enter" ><br>
+            Gender:<label><input type="radio" name="gender" value=" male">Male</label>
+            <label><input type="radio" name="gender" value=" female">female</label>
+            <label><input type="radio" name="gender" value="others">Others</label><br>
+            Course:<select id="course" name="course" required> 
+            <option value=" select a course">Select a course</option>
+            <option value=" java">Java Full Stack</option>
+            <option value=" python">Python Full Stack</option>
+            <option value=" aws">AWS</option>
+            <option value=" salesforce">Salesforce</option>
+            <option value=" servicenow">Servicenow</option>
+            <option value=" mongodb">MongoDB</option>
+            </select><br>
+            <button type="submit" >SUBMIT</button>
+            </form>
+    </div>
+   <script>
+document.querySelector('form').addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const rollno = document.getElementById("rollno").value.trim();
+    const phno = document.getElementById("phno").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const dob = document.getElementById("dob").value;
+    const branch = document.getElementById("branch").value;
+    const course = document.getElementById("course").value;
+
+    const gender = document.querySelector('input[name="gender"]:checked');
+
+    if (
+        name === "" ||
+        rollno === "" ||
+        phno === "" ||
+        email === "" ||
+        password === "" ||
+        dob === "" ||
+        branch === "select branch" ||
+        course === "select a course" ||
+        gender === null
+    ) {
+        alert("Enter required fields ⚠️");
+    } 
+    else {
+        alert("Submitted Successfully 👍");
+        this.reset();
+    }
+});
+</script>
+</body>
+</html>

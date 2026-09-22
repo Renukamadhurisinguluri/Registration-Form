@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+
+}
+h1{
+    font-family: serif;
+    color: rgb(12, 0, 10);
+    text-align: center;
+    font-size:x-large;
+}
+body{
+    background-color: rgb(251, 201, 234);
+    color: aliceblue;
+}
+div{
+    color: black;
+    text-align:center;
+    margin: auto;
+    padding: 2%;
+}
+button{
+    background-color: rgba(6, 241, 34, 0.838);
+    color: rgb(1, 1, 10);
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom:0px;
+    padding: 2%;
+}
+input {
+margin-bottom: 20px;
+margin:0 auto 20px auto;
+padding:1%;
+font-family: serif;
+background-color: rgb(212, 237, 88);
+color: black;
+box-sizing: border-box;
+text-align: center;
+}
+button:hover{
+    background-color: hsl(63, 93%, 35%);
+    color: blue;
+}
+input:hover{
+    background-color: rgb(145, 243, 96);
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+select{
+margin-bottom: 20px;
+margin:0 auto 20px auto;
+padding:1%;
+font-family: serif;
+background-color: rgb(212, 237, 88);
+
+color: black;
+box-sizing: border-box;
+}
+select:hover{
+    background-color: rgb(145, 243, 96);
+
+}
+label{
+  margin-bottom: 20px;
+margin:0 auto 20px auto;
+padding:1%;
+font-family: serif;
+background-color: rgb(212, 237, 88);
+color: black;
+box-sizing: border-box;
+}  
+form{
+ margin-bottom: 20px;
+margin:0 auto 20px auto;
+padding:1%;
+font-family: serif;
+background-color: rgb(155, 217, 246);
+color: black;
+box-sizing: border-box;
+text-align: center;
+height: 600px;
+width: 500px;
+}  
