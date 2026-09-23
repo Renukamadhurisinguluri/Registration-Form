@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="reg.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registration Form</title>
@@ -41,39 +41,6 @@
             <button type="submit" >SUBMIT</button>
             </form>
     </div>
-   <script>
-document.querySelector('form').addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const name = document.getElementById("name").value.trim();
-    const rollno = document.getElementById("rollno").value.trim();
-    const phno = document.getElementById("phno").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value.trim();
-    const dob = document.getElementById("dob").value;
-    const branch = document.getElementById("branch").value;
-    const course = document.getElementById("course").value;
-
-    const gender = document.querySelector('input[name="gender"]:checked');
-
-    if (
-        name === "" ||
-        rollno === "" ||
-        phno === "" ||
-        email === "" ||
-        password === "" ||
-        dob === "" ||
-        branch === "select branch" ||
-        course === "select a course" ||
-        gender === null
-    ) {
-        alert("Enter required fields ⚠️");
-    } 
-    else {
-        alert("Submitted Successfully 👍");
-        this.reset();
-    }
-});
-</script>
+   <script src="script.js"></script>
 </body>
 </html>
